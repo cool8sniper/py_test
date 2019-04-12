@@ -12,7 +12,7 @@ class Stack(object):
     def pop(self):
         if not self.is_empty():
             return self.items.pop()
-        return
+        return None
 
     def peek(self):
         return self.items[-1]

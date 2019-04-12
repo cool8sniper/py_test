@@ -13,7 +13,7 @@ class Queue(object):
     def dequeue(self):
         if not self.is_empty():
             return self.items.pop()
-        return
+        return None
 
     def size(self):
         return len(self.items)

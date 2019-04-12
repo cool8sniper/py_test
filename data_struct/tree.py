@@ -39,7 +39,8 @@ class BTree(object):
         self.hout(tree_base.rtree)
         print(tree_base.data)
 
-    def level_queue(self, tree_base):
+    @staticmethod
+    def level_queue(tree_base):
         if tree_base is None:
             return
         node = tree_base
@@ -54,17 +55,15 @@ class BTree(object):
 
 
 if __name__ == '__main__':
+    #         5
+    #     6         7
+    # 8     None  9   None
+
     tree1 = Tree(data=8)
     tree2 = Tree(data=9)
     tree3 = Tree(data=6, ltree=tree1)
     tree4 = Tree(data=7, ltree=tree2)
-    base = Tree(5, tree3, tree4)
-    btree = BTree(base)
-    """
-            5
-        6         7
-    8     None  9   None 
-    """
+    btree = BTree(Tree(5, tree3, tree4))
     # print('前序遍历结果: 56879')
     # btree.qout(btree.base)
 
