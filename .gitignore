@@ -11,3 +11,4 @@ py_test.egg-info/*
 .tox
 node_modules
 coverage.xml
+*.egg-info
