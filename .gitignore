@@ -1,0 +1,13 @@
+.idea/*
+.eggs
+.project
+build
+dist
+*.pyc
+*.iml
+py_test.egg-info/*
+.pydevproject
+.coverage
+.tox
+node_modules
+coverage.xml
